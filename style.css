@@ -1,55 +1,56 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+.container {
+    width: 100%;
     height: 100vh;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(152, 152, 207, 0.8);
+    background: radial-gradient(rgb(165, 165, 165), rgb(239, 240, 243));
 }
 
-.buttons {
-    margin-bottom: 10px;
-}
+.grid {
+    border: 1px solid;
+    width: 30rem;
+    height: 30rem;
 
-.container {
     display: grid;
-
-    border: 2px solid rgb(90, 90, 90);
-
-    border-radius: 7px;
-
-    height: 543px;
-    width: 543px;
 }
 
 .square {
-    background-color: rgb(247, 248, 248);
-    border: 1px solid rgb(197, 227, 236);
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+}
+
+.buttons {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 button {
-    width: 178px;
-    height: 40px;
-
-    font-size: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-    color: white;
-    background-color: lightslategray;
-
+    border: none;
     cursor: pointer;
-
-    border-style: none;
+    width: 8rem;
+    height: 2rem;
+    font-weight: 700;
 }
 
 button:hover {
-    background-color: rgb(108, 122, 136);
+    opacity: 90%;
+}
+
+.clear {
+    background: rgb(59, 59, 59);
+    color: white;
+}
+
+.color {
+    background: linear-gradient(rgba(14, 94, 214, 0.918), rgb(240, 29, 29));
+    color: white;
+}
+
+.gray-scale {
+    background: linear-gradient(rgba(31, 31, 30, 0.753), rgb(161, 158, 158));
+    color: white;
 }
